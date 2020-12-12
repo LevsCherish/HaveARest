@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <setting>
-  <work>10</work>
+  <work>30</work>
   <rest>5</rest>
   <checkBox_skip>True</checkBox_skip>
   <checkBox_allScreen>True</checkBox_allScreen>
