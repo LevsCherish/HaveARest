@@ -1,0 +1,12 @@
+D:\code\C#\HaveARest\HaveARest\bin\Debug\HaveARest.exe.config
+D:\code\C#\HaveARest\HaveARest\bin\Debug\HaveARest.exe
+D:\code\C#\HaveARest\HaveARest\bin\Debug\HaveARest.pdb
+D:\code\C#\HaveARest\HaveARest\obj\Debug\HaveARest.HaveARest.resources
+D:\code\C#\HaveARest\HaveARest\obj\Debug\HaveARest.Properties.Resources.resources
+D:\code\C#\HaveARest\HaveARest\obj\Debug\HaveARest.setting.resources
+D:\code\C#\HaveARest\HaveARest\obj\Debug\HaveARest.csproj.GenerateResource.cache
+D:\code\C#\HaveARest\HaveARest\obj\Debug\HaveARest.csproj.CoreCompileInputs.cache
+D:\code\C#\HaveARest\HaveARest\obj\Debug\HaveARest.exe
+D:\code\C#\HaveARest\HaveARest\obj\Debug\HaveARest.pdb
+D:\code\C#\HaveARest\HaveARest\obj\Debug\HaveARest.start.resources
+D:\code\C#\HaveARest\HaveARest\obj\Debug\HaveARest.csprojAssemblyReference.cache

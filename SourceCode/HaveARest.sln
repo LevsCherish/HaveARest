@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30503.244
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HaveARest", "HaveARest\HaveARest.csproj", "{77F9D561-D483-45D0-B84C-E02E385D85CF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{77F9D561-D483-45D0-B84C-E02E385D85CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77F9D561-D483-45D0-B84C-E02E385D85CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77F9D561-D483-45D0-B84C-E02E385D85CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77F9D561-D483-45D0-B84C-E02E385D85CF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {38378638-4945-4292-9D4C-10491BAC106D}
+	EndGlobalSection
+EndGlobal
