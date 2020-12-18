@@ -18,10 +18,16 @@ namespace HaveARest
         {
             InitializeComponent();
         }
+
         private void HaveARest_Load(object sender, EventArgs e)
         {
             this.FormBorderStyle = FormBorderStyle.FixedDialog;//设置边框为不可调节
             this.MaximizeBox = false; //取消最大化按键
+
+            // 自动处理布局 X轴
+            LayOutSet layoutSet = new LayOutSet(Size.Width, Size.Height);
+            layoutSet.setXCenter(this.button_Start);
+            setInfor();
 
             XmlDocument xml = new XmlDocument();
             xml.Load(path);
@@ -60,5 +66,22 @@ namespace HaveARest
             set.ShowDialog();
         }
 
+        private void setInfor()
+        {
+            int label1 = (Size.Width - 12 - this.label1.Size.Width - this.label2.Size.Width - this.label3.Size.Width - this.textBox_worktime.Size.Width - this.textBox_resttime.Size.Width) / 2;
+            this.label1.Location = new Point(label1, this.label1.Location.Y);
+
+            int textbox1 = label1 + this.label1.Size.Width + 3;
+            this.textBox_worktime.Location = new Point(textbox1, this.textBox_worktime.Location.Y);
+
+            int label2 = textbox1 + this.textBox_worktime.Width + 3;
+            this.label2.Location = new Point(label2, this.label2.Location.Y);
+
+            int textbox2 = label2 + this.label2.Size.Width + 3;
+            this.textBox_resttime.Location = new Point(textbox2, this.textBox_resttime.Location.Y);
+
+            int label3 = textbox2 + this.textBox_resttime.Width + 3;
+            this.label3.Location = new Point(label3, this.label3.Location.Y);
+        }
     }
 }

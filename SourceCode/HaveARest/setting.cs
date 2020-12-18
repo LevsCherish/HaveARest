@@ -22,10 +22,14 @@ namespace HaveARest
 
         private void setting_Load(object sender, EventArgs e)
         {
+            // 窗口布局设置
             this.FormBorderStyle = FormBorderStyle.FixedDialog;//设置边框为不可调节
             this.MaximizeBox = false; //取消最大化按键
             this.MinimizeBox = false;//取消最小化按键
+            LayOutSet layoutset = new LayOutSet(Size.Width, Size.Height);
+            layoutset.setXCenter(this.button_saveset);
 
+            // 设置初始化
             cbarray[0] = this.checkBox_skip;
             cbarray[1] = this.checkBox_allScreen;
             XmlDocument xml = new XmlDocument();
@@ -35,6 +39,9 @@ namespace HaveARest
             {
                 cb.Checked = Convert.ToBoolean(root.SelectNodes(cb.Name).Item(0).InnerText);
             }
+
+            this.textBox_work.Text = root.SelectNodes("workTips").Item(0).InnerText;
+            this.textBox_rest.Text = root.SelectNodes("restTips").Item(0).InnerText;
         }
 
         private void button_saveset_Click(object sender, EventArgs e)
@@ -46,6 +53,8 @@ namespace HaveARest
             {
                 root.SelectNodes(cb.Name).Item(0).InnerText = cb.Checked.ToString();
             }
+            root.SelectNodes("workTips").Item(0).InnerText = this.textBox_work.Text;
+            root.SelectNodes("restTips").Item(0).InnerText = this.textBox_rest.Text;
             xml.Save(path);
         }
     }

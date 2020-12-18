@@ -1,7 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <setting>
-  <work>30</work>
+  <work>1</work>
   <rest>5</rest>
   <checkBox_skip>True</checkBox_skip>
   <checkBox_allScreen>True</checkBox_allScreen>
+  <workTips>专心工作吧~</workTips>
+  <restTips>站起来休息一下~</restTips>
 </setting>

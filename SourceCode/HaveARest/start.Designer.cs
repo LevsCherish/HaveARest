@@ -42,11 +42,10 @@
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("微软雅黑", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label2.Location = new System.Drawing.Point(180, 100);
+            this.label2.Location = new System.Drawing.Point(182, 105);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(299, 124);
+            this.label2.Size = new System.Drawing.Size(0, 124);
             this.label2.TabIndex = 0;
-            this.label2.Text = "00:00";
             // 
             // timer1
             // 
@@ -58,17 +57,16 @@
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("微软雅黑", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label1.Location = new System.Drawing.Point(240, 246);
+            this.label1.Location = new System.Drawing.Point(240, 260);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(184, 38);
+            this.label1.Size = new System.Drawing.Size(0, 38);
             this.label1.TabIndex = 1;
-            this.label1.Text = "休息一下吧~";
             // 
             // button_skip
             // 
             this.button_skip.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button_skip.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button_skip.Location = new System.Drawing.Point(247, 315);
+            this.button_skip.Location = new System.Drawing.Point(247, 336);
             this.button_skip.Name = "button_skip";
             this.button_skip.Size = new System.Drawing.Size(154, 47);
             this.button_skip.TabIndex = 3;

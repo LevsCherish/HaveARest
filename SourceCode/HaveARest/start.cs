@@ -21,6 +21,7 @@ namespace HaveARest
 
         private static string path = @"XMLSET.xml";
         private static bool skip, allscreen;
+        private string work, rest;
 
         public start(int work, int rest)
         {
@@ -31,12 +32,16 @@ namespace HaveARest
         }
         private void start_Load(object sender, EventArgs e)
         {
+            // 读取设置
             XmlDocument xml = new XmlDocument();
             xml.Load(path);
             XmlNode root = xml.SelectSingleNode("setting");
             skip = Convert.ToBoolean(root.SelectNodes("checkBox_skip").Item(0).InnerText);
             allscreen = Convert.ToBoolean(root.SelectNodes("checkBox_allScreen").Item(0).InnerText);
+            work = root.SelectNodes("workTips").Item(0).InnerText;
+            rest = root.SelectNodes("restTips").Item(0).InnerText;
 
+            // 设置初始化
             timer1.Enabled = true;
             timer1.Start();
             string worktime2;
@@ -45,12 +50,21 @@ namespace HaveARest
             else
                 worktime2 = worktime.ToString();
             this.label2.Text = worktime2 + ":00";
-            this.label1.Text = "专心工作吧~";
+            this.label1.Text = work;
+
+            // 设置布局
+            LayOutSet layoutset = new LayOutSet(Size.Width, Size.Height);
+            layoutset.setXCenter(this.label2);
+            layoutset.setXCenter(this.label1);
+            layoutset.setXCenter(this.button_skip);
+
+            // 设置当前状态
             isRest = false;
         }
         
         private void havearest()
         {
+            // 休息
             if (skip)
             {
                 this.button_skip.Visible = true;
@@ -62,13 +76,23 @@ namespace HaveARest
             }
             this.label_close.Visible = false;
             isRest = true;
+
+            // 初始化倒计时
             string resttime2;
             if (resttime < 10)
                 resttime2 = "0" + resttime.ToString();
             else
                 resttime2 = resttime.ToString();
             this.label2.Text = resttime2 + ":00";
-            this.label1.Text = "休息一下吧~";
+            this.label1.Text = rest;
+
+            // 设置布局
+            LayOutSet layoutset = new LayOutSet(Size.Width, Size.Height);
+            layoutset.setXCenter(this.label2);
+            layoutset.setXCenter(this.label1);
+            layoutset.setXCenter(this.button_skip);
+
+            // 重置倒计时
             cost = 1;
             this.total = resttime - 1;
             timer1.Start();
@@ -76,6 +100,7 @@ namespace HaveARest
 
         private void beginwork()
         {
+            // 工作
             if (skip)
             {
                 this.button_skip.Visible = false;
@@ -87,13 +112,23 @@ namespace HaveARest
             }
             this.label_close.Visible = true;
             isRest = false;
+
+            // 初始化倒计时
             string worktime2;
             if (worktime < 10)
                 worktime2 = "0" + worktime.ToString();
             else
                 worktime2 = worktime.ToString();
             this.label2.Text = worktime2 + ":00";
-            this.label1.Text = "专心工作吧~";
+            this.label1.Text = work;
+
+            // 设置布局
+            LayOutSet layoutset = new LayOutSet(Size.Width, Size.Height);
+            layoutset.setXCenter(this.label2);
+            layoutset.setXCenter(this.label1);
+            layoutset.setXCenter(this.button_skip);
+
+            // 重置倒计时
             cost = 1;
             this.total = worktime - 1;
             timer1.Start();
@@ -112,6 +147,7 @@ namespace HaveARest
 
         private void timer1_Tick(object sender, EventArgs e)
         {
+            // 倒计时
             if (total < 0)
             {
                 timer1.Stop();
