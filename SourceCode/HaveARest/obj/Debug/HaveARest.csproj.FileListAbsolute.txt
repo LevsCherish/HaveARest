@@ -13,7 +13,6 @@ D:\code\C#\HaveARest\HaveARest\obj\Debug\HaveARest.csprojAssemblyReference.cache
 D:\HaveARest\SourceCode\HaveARest\bin\Debug\HaveARest.exe.config
 D:\HaveARest\SourceCode\HaveARest\bin\Debug\HaveARest.exe
 D:\HaveARest\SourceCode\HaveARest\bin\Debug\HaveARest.pdb
-D:\HaveARest\SourceCode\HaveARest\obj\Debug\HaveARest.csprojAssemblyReference.cache
 D:\HaveARest\SourceCode\HaveARest\obj\Debug\HaveARest.HaveARest.resources
 D:\HaveARest\SourceCode\HaveARest\obj\Debug\HaveARest.Properties.Resources.resources
 D:\HaveARest\SourceCode\HaveARest\obj\Debug\HaveARest.setting.resources
