@@ -32,7 +32,7 @@
 
 ## :rainbow:截图展示
 
-![首页](img/主页1.png)
+![首页](img/%E4%B8%BB%E9%A1%B51.png)
 
 
 
