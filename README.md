@@ -32,7 +32,15 @@
 
 ## :rainbow:截图展示
 
-![首页](img/%E4%B8%BB%E9%A1%B51.png)
+![首页](https://hbimg.huabanimg.com/8183f88ca97aaee40f05b43ac1f41db9853200ec315b-5ETjf8_fw658/format/webp)
+
+在首页可以设置工作时间和休息时间，以分钟为单位。
+
+![设置](https://hbimg.huabanimg.com/a0ce6da77fdddb79cfade90321e592d64259e3bb6044-BptQNH_fw658/format/webp)
+
+![](https://hbimg.huabanimg.com/9397746ef7c436a35f37df2aa180bae5854409f6321a-GrNmRb_fw658/format/webp)
+
+![](https://hbimg.huabanimg.com/f94d953380ce62668a6b714f9ab8e14c738efb785af9-CHViNk_fw658/format/webp)
 
 
 
